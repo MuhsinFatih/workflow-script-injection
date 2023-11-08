@@ -20,6 +20,7 @@ jobs:
         with:
           script: |
             const comment=process.env.ISSUE_COMMENT
+            console.log({comment})
             if (comment.startsWith('octocat')) {
               console.log("Issue comment starts with 'octocat'")
             } else {
